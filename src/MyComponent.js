@@ -2,9 +2,15 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class MyComponent extends Component {
+    
     static defaultProps = {
         name: '기본 이름'
     }
+
+    static propTypes = {
+        name: PropTypes.string // name props 타입을 문자열로 설정
+    }
+
     render() {
         return (
             <div>
@@ -12,10 +18,6 @@ class MyComponent extends Component {
             </div>
         )
     }
-}
-
-MyComponent.propTypes = {
-    name: PropTypes.string // name props 타입을 문자열로 설정
 }
 
 export default MyComponent;
