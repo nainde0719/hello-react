@@ -1,29 +1,12 @@
 import React, { Component } from 'react';
-import './App.css';
+import MyComponent from './MyComponent'; // MyComponent 파일을 불러옵니다.
 
 class App extends Component {
-  render() {
-      const text = '당신은 어썸한가요?';
-      const condition = true;
-      const style = {
-        backgroundColor: 'gray',
-        border: '1px solid black',
-        height: Math.round(Math.random() * 300) + 50,
-        width: Math.round(Math.random() * 300) + 50,
-        webkitTransition: 'all',
-        MozTransition: 'all',
-        msTransition: 'all'
-      };
-      
-      return (
-          <div  className/* not class */="my-div">
-              <h1>리액트 안녕!</h1>
-              <h2>{text}</h2>
-              { condition && '보여주세요' }
-              <div style={style}></div>
-          </div>
-      );
-  }
+    render() {
+        return (
+            <MyComponent/>
+        )
+    }
 }
 
-export default App;
+export default MyComponent;
