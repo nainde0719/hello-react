@@ -11,7 +11,7 @@ class EventPractice extends Component {
                     placeholder="아무거나"
                     onChange={
                         (e) => {
-                            console.log(e);
+                            console.log(e.target.value);
                         }
                     }
                 />
