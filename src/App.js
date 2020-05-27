@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import EventPractice from './EventPractice';
+import EventPractice from './ValidationSample';
+import ValidationSample from './ValidationSample';
 
 class App extends Component {
     render() {
         return (
-            <EventPractice/>
+            <ValidationSample/>
         );
     }
 }

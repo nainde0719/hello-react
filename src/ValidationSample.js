@@ -9,13 +9,13 @@ class ValidationSample extends Component {
     }
 
 handleChange = (e) => {
-    this.ListeningStateChangedEvent({
+    this.setState({
         password: e.target.value
     });
 }
 
 handleButtonClick = () => {
-    this.ListeningStateChangedEvent({
+    this.setState({
         clicked: true,
         validated: this.state.password === '0000'
     })
