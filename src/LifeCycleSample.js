@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class LifeCycleSample extends Component {
     state = {
         number: 0,
-        color: null,
+        color: null
     }
 
     myRef = null; // ref를 설정할 부분
@@ -25,7 +25,7 @@ class LifeCycleSample extends Component {
     }
 
     shouldComponentUpadte(nextProps, nextState) {
-        console.log('shouldComponentUpdate', nextPops, nextState);
+        console.log('shouldComponentUpdate', nextProps, nextState);
         // 숫자의 마지막 자리가 4면 리렌더링하지 않는다.
         return nextState.number % 10 !== 4;
     }
