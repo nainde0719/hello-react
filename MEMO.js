@@ -1,8 +1,6 @@
-<div id="my-element"></div>
-<input ref={(ref) => {this.input=ref}}></input>
-<input ref={(ref) => {this.input=ref}}
-/>
+var numbers = [1, 2, 3, 4, 5];
+var processed = numbers.map(function (num) {
+    return num * num;
+});
 
-<MyComponent
-    ref={(ref) => {this.myComponent=ref}}
-    />
+console.log(processed);
